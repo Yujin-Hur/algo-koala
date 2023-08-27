@@ -1,21 +1,27 @@
 #include <iostream>
+#include <string>
+#include <cmath>
+#include <set>
+#include <unordered_map>
+#include <stack>
+#include <queue>
 #include <vector>
 #include <algorithm>
-
-#define MAX 101
+#define FIRST cin.tie(NULL); cout.tie(NULL); ios::sync_with_stdio(false);
+#define MAX 105
+#define LL long long
 #define INF 1e9
 
 using namespace std;
-
 int V, M, J, S;
 int dist[MAX][MAX];
 int two_cost =  INF; // 지헌이와 상현이의 cost 합의 최소
 int j_cost = INF; // 지헌이 최소 cost
-
 vector<int> result;
 int answer = -1;
 
-void Search() {
+
+int Search() {
 
 	// 서로 최단거리인지
 	for (int i = 1; i <= V; i++) {
@@ -48,7 +54,7 @@ void Search() {
 	}
 	if (!result.empty()) {
 		sort(result.begin(), result.end());
-		answer = result[0];
+		return (result[0]);
 	}
 }
 
@@ -85,7 +91,7 @@ int main() {
 			}
 		}
 	}
-	Search(); // 조건 4개 적용
+	Search(); // dist를 보고 조건에 맞는 node 
 	cout << answer << "\n";
 
 	return 0;
