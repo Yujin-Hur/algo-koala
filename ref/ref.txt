@@ -1,0 +1,9 @@
+# c++ vector 정리
+https://blockdmask.tistory.com/70
+# c++ deque 정리
+https://blockdmask.tistory.com/73?category=249379
+
+
+
+## ++연산자
+num3 = num1++;    // num1의 값을 num3에 할당한 뒤 num1의 값을 1 증가시킴

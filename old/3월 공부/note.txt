@@ -1,0 +1,9 @@
+#include <vector>
+vector: c++ 의 리스트
+vector<int> A;
+A.push_back(7);   //마지막 원소뒤에 7을 삽입
+
+--- 
+알고리즘 속도 향상위해:
+ios_base::sync_with_stdio(0);
+cin.tie(0); //cin 속도 향상 위해
